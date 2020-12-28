@@ -10,7 +10,8 @@ jobs:
     
     steps:
       - name: Print hello
-        run: echo Hello, world from build!
+        run: docker build -t python_volume_app .
+            echo Hello, world from build!
 
   deploy:
     runs-on: ubuntu-latest
